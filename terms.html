@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terms of Service — Theeram</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            color: #f5f3ff;
+            background:
+                radial-gradient(circle at 15% 10%, rgba(124, 58, 237, 0.20), transparent 30%),
+                radial-gradient(circle at 85% 20%, rgba(168, 85, 247, 0.16), transparent 30%),
+                #07060b;
+            line-height: 1.7;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(
+                    rgba(255,255,255,0.018) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.018) 1px,
+                    transparent 1px
+                );
+            background-size: 45px 45px;
+            mask-image: linear-gradient(to bottom, black, transparent);
+        }
+
+        a {
+            color: #c084fc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #e9d5ff;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            width: 100%;
+            padding: 18px 6%;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            background: rgba(7,6,11,0.72);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        .nav-inner {
+            max-width: 1150px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .brand-logo {
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            aspect-ratio: 1 / 1;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.09);
+            background: #11111a;
+            box-shadow: 0 0 25px rgba(139,92,246,0.16);
+        }
+
+        .brand-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .back {
+            padding: 9px 15px;
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.045);
+            color: #ddd6fe;
+            transition: 0.2s ease;
+        }
+
+        .back:hover {
+            background: rgba(139,92,246,0.14);
+            border-color: rgba(168,85,247,0.3);
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 85px 24px 45px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            padding: 7px 13px;
+            border-radius: 999px;
+            border: 1px solid rgba(168,85,247,0.22);
+            background: rgba(139,92,246,0.09);
+            color: #d8b4fe;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(40px, 7vw, 68px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #a8a3b5;
+            font-size: 16px;
+        }
+
+        .updated {
+            margin-top: 16px !important;
+            font-size: 13px !important;
+            color: #777181 !important;
+        }
+
+        .content {
+            width: min(900px, calc(100% - 32px));
+            margin: 0 auto 80px;
+        }
+
+        .card {
+            padding: 32px;
+            margin-bottom: 18px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.075);
+            background: rgba(255,255,255,0.035);
+            box-shadow:
+                0 20px 70px rgba(0,0,0,0.18),
+                inset 0 1px rgba(255,255,255,0.025);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        h2 {
+            margin-bottom: 13px;
+            font-size: 22px;
+            color: #f5f3ff;
+        }
+
+        h3 {
+            margin: 22px 0 8px;
+            font-size: 16px;
+            color: #ddd6fe;
+        }
+
+        p {
+            color: #aaa4b4;
+            margin-bottom: 13px;
+        }
+
+        ul {
+            margin: 10px 0 16px 22px;
+            color: #aaa4b4;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        strong {
+            color: #e9e5f5;
+        }
+
+        .support-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+            padding: 11px 17px;
+            border-radius: 11px;
+            border: 1px solid rgba(168,85,247,0.28);
+            background: rgba(139,92,246,0.12);
+            color: #e9d5ff;
+            font-weight: 700;
+            transition: 0.2s ease;
+        }
+
+        .support-button:hover {
+            transform: translateY(-2px);
+            background: rgba(139,92,246,0.20);
+            border-color: rgba(192,132,252,0.45);
+            box-shadow: 0 10px 30px rgba(124,58,237,0.15);
+        }
+
+        .footer {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 30px 20px;
+            text-align: center;
+            color: #706b78;
+            font-size: 13px;
+        }
+
+        @media (max-width: 650px) {
+            .navbar {
+                padding: 14px 18px;
+            }
+
+            .brand span {
+                font-size: 14px;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+
+            .card {
+                padding: 23px;
+                border-radius: 17px;
+            }
+
+            h1 {
+                letter-spacing: -1px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+
+            <a class="brand" href="/">
+                <div class="brand-logo">
+                    <img src="theeram.png" alt="Theeram">
+                </div>
+
+                <span>തീരം — Theeram</span>
+            </a>
+
+            <a class="back" href="/">
+                ← Back to Theeram
+            </a>
+
+        </div>
+    </nav>
+
+    <header class="hero">
+
+        <div class="badge">
+            THEERAM • LEGAL
+        </div>
+
+        <h1>
+            Terms of Service
+        </h1>
+
+        <p>
+            These terms explain the rules for using Theeram and
+            the services provided through the Theeram Discord bot.
+        </p>
+
+        <p class="updated">
+            Last updated: October 3, 2026
+        </p>
+
+    </header>
+
+    <main class="content">
+
+        <section class="card">
+
+            <h2>1. Acceptance of Terms</h2>
+
+            <p>
+                By adding, accessing, or using Theeram, you agree to
+                these Terms of Service.
+            </p>
+
+            <p>
+                If you do not agree with these terms, you should stop
+                using Theeram and remove the bot from your Discord server.
+            </p>
+
+            <p>
+                Your use of Theeram is also subject to the applicable
+                Discord Terms of Service, Community Guidelines,
+                Developer Terms, and other applicable Discord policies.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>2. About Theeram</h2>
+
+            <p>
+                Theeram is a Discord music bot designed to provide
+                music-related functionality inside Discord servers.
+            </p>
+
+            <p>
+                Available functionality may include:
+            </p>
+
+            <ul>
+                <li><strong>/play</strong> — Play a requested track.</li>
+                <li><strong>/pause</strong> — Pause playback.</li>
+                <li><strong>/resume</strong> — Resume playback.</li>
+                <li><strong>/skip</strong> — Skip the current track.</li>
+                <li><strong>/stop</strong> — Stop playback.</li>
+                <li><strong>/queue</strong> — View the current queue.</li>
+                <li><strong>/nowplaying</strong> — View the current track.</li>
+                <li><strong>/volume</strong> — Adjust playback volume.</li>
+                <li><strong>/disconnect</strong> — Disconnect from voice.</li>
+            </ul>
+
+            <p>
+                Features and commands may be added, changed, suspended,
+                or removed over time.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>3. Acceptable Use</h2>
+
+            <p>
+                You agree to use Theeram only for lawful purposes and
+                in accordance with Discord's rules and policies.
+            </p>
+
+            <p>You must not:</p>
+
+            <ul>
+                <li>Use Theeram to violate applicable laws or regulations.</li>
+                <li>Attempt to disrupt, damage, or overload the service.</li>
+                <li>Attempt to gain unauthorized access to Theeram or its infrastructure.</li>
+                <li>Attempt to interfere with the normal operation of the bot.</li>
+                <li>Use Theeram to distribute malicious software or harmful content.</li>
+                <li>Use Theeram in a way that violates Discord's policies.</li>
+            </ul>
+
+        </section>
+
+        <section class="card">
+
+            <h2>4. Discord</h2>
+
+            <p>
+                Theeram operates through Discord and relies on Discord's
+                platform and APIs.
+            </p>
+
+            <p>
+                Theeram is an independent application and is
+                <strong>not affiliated with, endorsed by, or sponsored by Discord Inc.</strong>
+            </p>
+
+            <p>
+                Your use of Discord remains subject to Discord's own
+                Terms of Service and policies.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>5. Third-Party Services and Content</h2>
+
+            <p>
+                Theeram may interact with third-party services to provide
+                music-related functionality, including services used to
+                search for or retrieve publicly available media information.
+            </p>
+
+            <p>
+                Third-party services may have their own terms,
+                policies, availability restrictions, and content rules.
+            </p>
+
+            <p>
+                Theeram does not claim ownership of third-party content.
+                Users are responsible for ensuring that their use of
+                requested content complies with applicable laws and
+                third-party terms.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>6. Availability</h2>
+
+            <p>
+                Theeram is provided on an availability basis. We may
+                temporarily stop or restrict the service for maintenance,
+                updates, technical problems, or other reasons.
+            </p>
+
+            <p>
+                We do not guarantee that Theeram will always be available,
+                uninterrupted, or error-free.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>7. Changes to Theeram</h2>
+
+            <p>
+                Features, commands, integrations, and other parts of
+                Theeram may change at any time.
+            </p>
+
+            <p>
+                We may update these Terms when necessary. Continued use
+                of Theeram after updated terms become available means
+                that you agree to the updated terms.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>8. Termination</h2>
+
+            <p>
+                You may stop using Theeram at any time by removing it
+                from your Discord server.
+            </p>
+
+            <p>
+                Access to Theeram may also be suspended or terminated
+                if necessary to protect the service, comply with
+                applicable requirements, or address misuse.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>9. Intellectual Property</h2>
+
+            <p>
+                The Theeram name, branding, website design, logos, and
+                original software are owned by their respective rights
+                holders unless otherwise stated.
+            </p>
+
+            <p>
+                These Terms do not transfer ownership of any intellectual
+                property to users.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>10. Disclaimer</h2>
+
+            <p>
+                To the extent permitted by applicable law, Theeram is
+                provided without guarantees regarding uninterrupted
+                availability, performance, or suitability for a
+                particular purpose.
+            </p>
+
+            <p>
+                Third-party services and content are outside the direct
+                control of Theeram.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>11. Contact</h2>
+
+            <p>
+                If you have questions about these Terms of Service,
+                please contact Theeram through our official Discord
+                support server.
+            </p>
+
+            <a
+                class="support-button"
+                href="https://discord.gg/zQzhSBXfU"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Join Theeram Support →
+            </a>
+
+        </section>
+
+        <section class="card">
+
+            <h2>12. Agreement</h2>
+
+            <p>
+                By using Theeram, you acknowledge that you have read
+                and understood these Terms of Service and agree to
+                follow them.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        © 2026 Theeram. Built for Discord.
+    </footer>
+
+</body>
+</html>

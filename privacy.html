@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy — Theeram</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            color: #f5f3ff;
+            background:
+                radial-gradient(circle at 15% 10%, rgba(124, 58, 237, 0.20), transparent 30%),
+                radial-gradient(circle at 85% 20%, rgba(168, 85, 247, 0.16), transparent 30%),
+                #07060b;
+            line-height: 1.7;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(
+                    rgba(255,255,255,0.018) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.018) 1px,
+                    transparent 1px
+                );
+            background-size: 45px 45px;
+            mask-image: linear-gradient(to bottom, black, transparent);
+        }
+
+        a {
+            color: #c084fc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #e9d5ff;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            width: 100%;
+            padding: 18px 6%;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            background: rgba(7,6,11,0.72);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        .nav-inner {
+            max-width: 1150px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .brand-logo {
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            aspect-ratio: 1 / 1;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.09);
+            background: #11111a;
+            box-shadow: 0 0 25px rgba(139,92,246,0.16);
+        }
+
+        .brand-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .back {
+            padding: 9px 15px;
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.045);
+            color: #ddd6fe;
+            transition: 0.2s ease;
+        }
+
+        .back:hover {
+            background: rgba(139,92,246,0.14);
+            border-color: rgba(168,85,247,0.3);
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 85px 24px 45px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            padding: 7px 13px;
+            border-radius: 999px;
+            border: 1px solid rgba(168,85,247,0.22);
+            background: rgba(139,92,246,0.09);
+            color: #d8b4fe;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(40px, 7vw, 68px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #a8a3b5;
+            font-size: 16px;
+        }
+
+        .updated {
+            margin-top: 16px !important;
+            font-size: 13px !important;
+            color: #777181 !important;
+        }
+
+        .content {
+            width: min(900px, calc(100% - 32px));
+            margin: 0 auto 80px;
+        }
+
+        .card {
+            padding: 32px;
+            margin-bottom: 18px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.075);
+            background: rgba(255,255,255,0.035);
+            box-shadow:
+                0 20px 70px rgba(0,0,0,0.18),
+                inset 0 1px rgba(255,255,255,0.025);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        h2 {
+            margin-bottom: 13px;
+            font-size: 22px;
+            color: #f5f3ff;
+        }
+
+        h3 {
+            margin: 22px 0 8px;
+            font-size: 16px;
+            color: #ddd6fe;
+        }
+
+        p {
+            color: #aaa4b4;
+            margin-bottom: 13px;
+        }
+
+        ul {
+            margin: 10px 0 16px 22px;
+            color: #aaa4b4;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        strong {
+            color: #e9e5f5;
+        }
+
+        .highlight {
+            border-color: rgba(168,85,247,0.16);
+            background: rgba(139,92,246,0.055);
+        }
+
+        .support-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+            padding: 11px 17px;
+            border-radius: 11px;
+            border: 1px solid rgba(168,85,247,0.28);
+            background: rgba(139,92,246,0.12);
+            color: #e9d5ff;
+            font-weight: 700;
+            transition: 0.2s ease;
+        }
+
+        .support-button:hover {
+            transform: translateY(-2px);
+            background: rgba(139,92,246,0.20);
+            border-color: rgba(192,132,252,0.45);
+            box-shadow: 0 10px 30px rgba(124,58,237,0.15);
+        }
+
+        .footer {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 30px 20px;
+            text-align: center;
+            color: #706b78;
+            font-size: 13px;
+        }
+
+        @media (max-width: 650px) {
+            .navbar {
+                padding: 14px 18px;
+            }
+
+            .brand span {
+                font-size: 14px;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+
+            .card {
+                padding: 23px;
+                border-radius: 17px;
+            }
+
+            h1 {
+                letter-spacing: -1px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+
+            <a class="brand" href="/">
+                <div class="brand-logo">
+                    <img src="theeram.png" alt="Theeram">
+                </div>
+
+                <span>തീരം — Theeram</span>
+            </a>
+
+            <a class="back" href="/">
+                ← Back to Theeram
+            </a>
+
+        </div>
+    </nav>
+
+    <header class="hero">
+
+        <div class="badge">
+            THEERAM • PRIVACY
+        </div>
+
+        <h1>
+            Privacy Policy
+        </h1>
+
+        <p>
+            This Privacy Policy explains what information Theeram may
+            process when you use the Theeram Discord bot.
+        </p>
+
+        <p class="updated">
+            Last updated: October 3, 2026
+        </p>
+
+    </header>
+
+    <main class="content">
+
+        <section class="card highlight">
+
+            <h2>1. Overview</h2>
+
+            <p>
+                Theeram is a Discord music bot. We aim to collect and
+                process only the information necessary to provide the
+                bot's functionality.
+            </p>
+
+            <p>
+                This Privacy Policy explains what information may be
+                processed, why it may be processed, how it may be
+                shared, how it may be retained, and how you can request
+                deletion of information associated with you.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>2. Information Theeram May Process</h2>
+
+            <h3>Discord Information</h3>
+
+            <p>
+                When you interact with Theeram through Discord, the bot
+                may receive information made available to it through
+                Discord's API, such as:
+            </p>
+
+            <ul>
+                <li>Discord user ID</li>
+                <li>Discord server/guild ID</li>
+                <li>Discord channel or voice-channel information</li>
+                <li>User interactions with Theeram commands</li>
+            </ul>
+
+            <h3>Music Requests</h3>
+
+            <p>
+                When you use a music command, Theeram may process the
+                search query or URL you provide so that it can locate
+                and play the requested content.
+            </p>
+
+            <h3>Temporary Playback Information</h3>
+
+            <p>
+                While music is playing, Theeram may temporarily process
+                information such as the current track, queue, playback
+                state, volume, and voice connection state.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>3. Information We Do Not Intentionally Collect</h2>
+
+            <p>
+                Theeram does not intentionally request or collect:
+            </p>
+
+            <ul>
+                <li>Your Discord password.</li>
+                <li>Your Discord authentication token.</li>
+                <li>Your payment card information.</li>
+                <li>Private messages unrelated to Theeram's functionality.</li>
+                <li>Personal information that is not necessary for the bot's operation.</li>
+            </ul>
+
+            <p>
+                Never provide your Discord password, authentication token,
+                or other account credentials to Theeram.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>4. How Information Is Used</h2>
+
+            <p>
+                Information available to Theeram is used only as necessary
+                to provide and maintain its functionality.
+            </p>
+
+            <p>This may include:</p>
+
+            <ul>
+                <li>Processing commands.</li>
+                <li>Joining and leaving Discord voice channels.</li>
+                <li>Searching for requested music.</li>
+                <li>Maintaining a temporary music queue.</li>
+                <li>Controlling playback.</li>
+                <li>Preventing abuse and technical problems.</li>
+                <li>Maintaining and improving the service.</li>
+            </ul>
+
+        </section>
+
+        <section class="card">
+
+            <h2>5. Data Storage and Retention</h2>
+
+            <p>
+                Theeram is designed to avoid retaining information longer
+                than necessary for its functionality.
+            </p>
+
+            <p>
+                Temporary playback information, such as queues and
+                voice connection state, may exist while a music session
+                is active and may be cleared when the session ends.
+            </p>
+
+            <p>
+                If Theeram stores operational information for a longer
+                period, that information will be limited to what is
+                reasonably necessary for the service.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>6. Sharing of Information</h2>
+
+            <p>
+                Theeram does not sell users' personal information.
+            </p>
+
+            <p>
+                Information may be processed by third-party services
+                when necessary to provide functionality, such as
+                Discord and services used for music search or media
+                retrieval.
+            </p>
+
+            <p>
+                Third-party services have their own privacy policies and
+                terms. Theeram does not control how independent
+                third-party services operate.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>7. Discord API</h2>
+
+            <p>
+                Theeram uses Discord's API to communicate with Discord
+                and provide its bot functionality.
+            </p>
+
+            <p>
+                Theeram's use of Discord data is subject to applicable
+                Discord developer requirements and policies.
+            </p>
+
+            <p>
+                Discord itself may separately collect and process
+                information according to its own privacy policy.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>8. Security</h2>
+
+            <p>
+                Reasonable technical measures are used to protect
+                information handled by Theeram.
+            </p>
+
+            <p>
+                However, no internet-connected service can guarantee
+                absolute security.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>9. Your Rights and Data Deletion</h2>
+
+            <p>
+                You may request deletion of personal information that
+                Theeram may have stored and that can reasonably be
+                associated with your use of the bot.
+            </p>
+
+            <p>
+                To request deletion, contact Theeram through our
+                official Discord support server.
+            </p>
+
+            <a
+                class="support-button"
+                href="https://discord.gg/zQzhSBXfU"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Request Support / Data Deletion →
+            </a>
+
+            <p style="margin-top: 18px;">
+                Please do not send your Discord password, authentication
+                token, or other sensitive credentials when making a request.
+            </p>
+
+            <p>
+                Some information may need to be retained where required
+                by applicable law or where necessary for legitimate
+                security or operational purposes.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>10. Children's Privacy</h2>
+
+            <p>
+                Theeram does not intentionally request personal
+                information from users for purposes unrelated to the
+                bot's functionality.
+            </p>
+
+            <p>
+                Users must comply with Discord's applicable age
+                requirements and applicable laws in their location.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>11. Third-Party Links and Services</h2>
+
+            <p>
+                Theeram or this website may contain links to services
+                operated by third parties.
+            </p>
+
+            <p>
+                We are not responsible for the privacy practices of
+                independent third-party websites or services. You should
+                review their respective privacy policies before using them.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>12. Changes to This Policy</h2>
+
+            <p>
+                This Privacy Policy may be updated when Theeram's
+                functionality, data practices, or applicable requirements
+                change.
+            </p>
+
+            <p>
+                The latest version will be published on this page with
+                an updated date.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>13. Discord Disclaimer</h2>
+
+            <p>
+                Theeram is an independent application and is
+                <strong>not affiliated with, endorsed by, or sponsored by Discord Inc.</strong>
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>14. Contact & Data Requests</h2>
+
+            <p>
+                For privacy questions, support requests, or requests to
+                modify or delete information associated with your use
+                of Theeram, please contact us through our official
+                Discord support server.
+            </p>
+
+            <a
+                class="support-button"
+                href="https://discord.gg/zQzhSBXfU"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Contact Theeram Support →
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        © 2026 Theeram. Built for Discord.
+    </footer>
+
+</body>
+</html>

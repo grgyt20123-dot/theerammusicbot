@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>തീരം — Kerala's Music Bot</title>
+
+    <meta
+        name="description"
+        content="തീരം — A modern music bot built for Discord and made in Kerala."
+    >
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="glow glow-three"></div>
+        <div class="grid"></div>
+    </div>
+
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <a href="#" class="brand">
+
+            <div class="brand-logo">
+                <img src="theeram.png" alt="തീരം logo">
+            </div>
+
+            <div class="brand-text">
+                <span class="brand-name">തീരം</span>
+                <span class="brand-sub">MUSIC BOT</span>
+            </div>
+
+        </a>
+
+
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#commands">Commands</a>
+            <a href="#about">About</a>
+            <a
+                href="https://discord.gg/zQzhSBXfU"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Contact
+            </a>
+        </nav>
+
+
+        <a
+            href="https://discord.com/oauth2/authorize?client_id=1555561609437520072&permissions=36700160&scope=bot%20applications.commands"
+            class="discord-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span>+</span>
+            Add to Discord
+        </a>
+
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#features">Features</a>
+        <a href="#commands">Commands</a>
+        <a href="#about">About</a>
+
+        <a
+            href="https://discord.gg/zQzhSBXfU"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Contact
+        </a>
+
+        <a
+            href="https://discord.com/oauth2/authorize?client_id=1555561609437520072&permissions=36700160&scope=bot%20applications.commands"
+            class="mobile-discord-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Add to Discord
+        </a>
+
+    </div>
+
+
+    <!-- Hero -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                Kerala's Music Bot
+            </div>
+
+
+            <h1>
+                Music that feels
+                <br>
+                <span>like home.</span>
+            </h1>
+
+
+            <p class="hero-description">
+                Meet തീരം — a modern Discord music bot made for
+                Malayalam music, Indian hits and everything you love.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="https://discord.com/oauth2/authorize?client_id=1555561609437520072&permissions=36700160&scope=bot%20applications.commands"
+                    class="primary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>+</span>
+                    Add to Discord
+                </a>
+
+                <a href="#features" class="secondary-btn">
+                    Explore Features
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+
+            <div class="hero-note">
+                Free to use
+                <span>•</span>
+                Built for Discord
+                <span>•</span>
+                Made with ❤️ in Kerala
+            </div>
+
+        </section>
+
+
+        <!-- What We Support -->
+        <section class="support-section reveal">
+
+            <div class="section-label">
+                <span></span>
+                MADE FOR EVERYONE
+            </div>
+
+
+            <h2>
+                One bot.
+                <span>Every vibe.</span>
+            </h2>
+
+
+            <p class="section-description">
+                From Malayalam classics to the latest global hits,
+                തീരം is built to keep your Discord music flowing.
+            </p>
+
+
+            <div class="support-grid">
+
+                <div class="support-card">
+
+                    <div class="support-icon">
+                        🇮🇳
+                    </div>
+
+                    <h3>Malayalam</h3>
+
+                    <p>
+                        Discover Malayalam music and artists with ease.
+                    </p>
+
+                </div>
+
+
+                <div class="support-card">
+
+                    <div class="support-icon">
+                        🎧
+                    </div>
+
+                    <h3>Indian Music</h3>
+
+                    <p>
+                        Tamil, Hindi, Telugu, Kannada and more.
+                    </p>
+
+                </div>
+
+
+                <div class="support-card">
+
+                    <div class="support-icon">
+                        🌎
+                    </div>
+
+                    <h3>Global</h3>
+
+                    <p>
+                        Listen to music from around the world.
+                    </p>
+
+                </div>
+
+
+                <div class="support-card">
+
+                    <div class="support-icon">
+                        💜
+                    </div>
+
+                    <h3>Discord</h3>
+
+                    <p>
+                        Built specifically for Discord communities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section class="features-section reveal" id="features">
+
+            <div class="section-label">
+                <span></span>
+                FEATURES
+            </div>
+
+
+            <h2>
+                Everything you need.
+                <br>
+                <span>Nothing you don't.</span>
+            </h2>
+
+
+            <p class="section-description">
+                Simple controls, smooth playback and a music experience
+                designed around your Discord server.
+            </p>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">♫</div>
+
+                    <h3>High Quality</h3>
+
+                    <p>
+                        Enjoy clear and smooth music while hanging out
+                        with your friends.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">⌕</div>
+
+                    <h3>Fast Search</h3>
+
+                    <p>
+                        Search for your favourite songs quickly with
+                        simple commands.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">☷</div>
+
+                    <h3>Smart Queue</h3>
+
+                    <p>
+                        Add multiple songs and keep your music going
+                        without interruptions.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">↻</div>
+
+                    <h3>Loop & Autoplay</h3>
+
+                    <p>
+                        Keep your listening session going with flexible
+                        playback controls.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔊</div>
+
+                    <h3>Volume Control</h3>
+
+                    <p>
+                        Adjust the playback volume directly from Discord.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+
+                    <h3>Fast Response</h3>
+
+                    <p>
+                        Lightweight commands designed to respond quickly.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">അ</div>
+
+                    <h3>Malayalam First</h3>
+
+                    <p>
+                        Built with Kerala and Malayalam music in mind.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+
+                    <h3>Global Music</h3>
+
+                    <p>
+                        Go beyond regional music and explore songs from
+                        everywhere.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Built For Discord -->
+        <section class="discord-section reveal">
+
+            <div class="section-label">
+                <span></span>
+                BUILT FOR DISCORD
+            </div>
+
+
+            <h2>
+                Music belongs
+                <span>in your server.</span>
+            </h2>
+
+
+            <p class="section-description">
+                തീരം keeps everything simple. Join a voice channel,
+                use /play and let the music begin.
+            </p>
+
+
+            <div class="discord-preview">
+
+                <div class="preview-top">
+
+                    <div class="preview-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span class="preview-title">
+                        തീരം
+                    </span>
+
+                    <div class="preview-online">
+                        <span></span>
+                        ONLINE
+                    </div>
+
+                </div>
+
+
+                <div class="preview-body">
+
+                    <div class="preview-sidebar">
+
+                        <div class="sidebar-title">
+                            MUSIC
+                        </div>
+
+                        <div class="fake-channel active">
+                            🎵 music
+                        </div>
+
+                        <div class="fake-channel">
+                            💬 general
+                        </div>
+
+                        <div class="fake-channel">
+                            🎮 gaming
+                        </div>
+
+                    </div>
+
+
+                    <div class="preview-chat">
+
+                        <div class="chat-header">
+                            <span>#</span>
+                            music
+                        </div>
+
+
+                        <div class="fake-message">
+
+                            <div class="fake-avatar">
+                                <img src="theeram.png" alt="തീരം">
+                            </div>
+
+
+                            <div class="message-content">
+
+                                <div class="message-name">
+                                    <strong>തീരം</strong>
+                                    <span class="bot-tag">BOT</span>
+                                    <small>Today at 12:00 PM</small>
+                                </div>
+
+
+                                <p>
+                                    🎵 Ready to play some music!
+                                </p>
+
+
+                                <div class="fake-player">
+
+                                    <div class="fake-album">
+                                        ♪
+                                    </div>
+
+
+                                    <div class="fake-song">
+
+                                        <strong>
+                                            Music is waiting.
+                                        </strong>
+
+                                        <span>
+                                            Use /play to get started.
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="fake-controls">
+                                        ▶
+                                        <span>⏭</span>
+                                        🔊
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About / Kerala -->
+        <section class="kerala-section reveal" id="about">
+
+            <div class="kerala-card">
+
+                <div class="kerala-content">
+
+                    <div class="section-label">
+                        <span></span>
+                        OUR STORY
+                    </div>
+
+
+                    <h2>
+                        Born in Kerala.
+                        <br>
+                        <span>Built for Discord.</span>
+                    </h2>
+
+
+                    <p>
+                        തീരം means "shore" in Malayalam.
+                        Inspired by Kerala's coastline and its culture,
+                        തീരം brings that same feeling of home into your
+                        Discord server.
+                    </p>
+
+
+                    <p>
+                        Whether you're listening with friends, gaming
+                        together or just relaxing in a voice channel,
+                        the goal is simple — make music feel effortless.
+                    </p>
+
+
+                    <div class="tags">
+                        <span>Kerala</span>
+                        <span>Malayalam</span>
+                        <span>Discord</span>
+                    </div>
+
+                </div>
+
+
+                <div class="kerala-visual">
+
+                    <div class="moon"></div>
+
+                    <div class="palm palm-one">🌴</div>
+                    <div class="palm palm-two">🌴</div>
+
+                    <div class="wave wave-one"></div>
+                    <div class="wave wave-two"></div>
+                    <div class="wave wave-three"></div>
+
+
+                    <div class="visual-logo">
+
+                        <img
+                            src="theeram.png"
+                            alt="തീരം"
+                        >
+
+                        <span>തീരം</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Commands -->
+        <section class="commands-section reveal" id="commands">
+
+            <div class="section-label">
+                <span></span>
+                COMMANDS
+            </div>
+
+
+            <h2>
+                Simple commands.
+                <span>Easy music.</span>
+            </h2>
+
+
+            <p class="section-description">
+                Everything you need to control your music without
+                complicated setup.
+            </p>
+
+
+            <div class="commands-container">
+
+                <div class="command">
+
+                    <code>/play</code>
+
+                    <div>
+                        <h3>Play</h3>
+                        <p>
+                            Search for a song or play a URL.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="command">
+
+                    <code>/pause</code>
+
+                    <div>
+                        <h3>Pause</h3>
+                        <p>
+                            Pause the current music.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="command">
+
+                    <code>/resume</code>
+
+                    <div>
+                        <h3>Resume</h3>
+                        <p>
+                            Continue playback.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="command">
+
+                    <code>/skip</code>
+
+                    <div>
+                        <h3>Skip</h3>
+                        <p>
+                            Move to the next song.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="command">
+
+                    <code>/stop</code>
+
+                    <div>
+                        <h3>Stop</h3>
+                        <p>
+                            Stop playback and clear the queue.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="command">
+
+                    <code>/queue</code>
+
+                    <div>
+                        <h3>Queue</h3>
+                        <p>
+                            View the current music queue.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="command">
+
+                    <code>/nowplaying</code>
+
+                    <div>
+                        <h3>Now Playing</h3>
+                        <p>
+                            See the currently playing track.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="command">
+
+                    <code>/volume</code>
+
+                    <div>
+                        <h3>Volume</h3>
+                        <p>
+                            Change the playback volume.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="command">
+
+                    <code>/disconnect</code>
+
+                    <div>
+                        <h3>Disconnect</h3>
+                        <p>
+                            Disconnect തീരം from the voice channel.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta reveal">
+
+            <div class="cta-glow"></div>
+
+            <div class="cta-content">
+
+                <div class="cta-icon">
+                    <img src="theeram.png" alt="തീരം">
+                </div>
+
+
+                <h2>
+                    Bring the music
+                    <br>
+                    <span>to your server.</span>
+                </h2>
+
+
+                <p>
+                    Add തീരം to your Discord server and start listening
+                    with your community.
+                </p>
+
+
+                <a
+                    href="https://discord.com/oauth2/authorize?client_id=1555561609437520072&permissions=36700160&scope=bot%20applications.commands"
+                    class="primary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Add തീരം to Discord
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="brand">
+
+                    <div class="brand-logo">
+                        <img src="theeram.png" alt="തീരം logo">
+                    </div>
+
+                    <div class="brand-text">
+                        <span class="brand-name">തീരം</span>
+                        <span class="brand-sub">MUSIC BOT</span>
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Kerala's music bot for Discord.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+
+                    <h4>Navigation</h4>
+
+                    <a href="#features">Features</a>
+                    <a href="#commands">Commands</a>
+                    <a href="#about">About</a>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Community</h4>
+
+                    <a
+                        href="https://discord.com/oauth2/authorize?client_id=1555561609437520072&permissions=36700160&scope=bot%20applications.commands"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Add to Discord
+                    </a>
+
+                    <a
+                        href="https://discord.gg/zQzhSBXfU"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Support Server
+                    </a>
+
+                    <a
+                        href="privacy.html"
+                    >
+                        Privacy Policy
+                    </a>
+
+                    <a
+                        href="terms.html"
+                    >
+                        Terms of Service
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 തീരം. All rights reserved.
+            </span>
+
+            <span>
+                Made with ❤️ in Kerala
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
